@@ -1,0 +1,154 @@
+machine learning applications:
+google ranks webpages using machine learning
+apps can recognize pictures and tag people
+Recommendation feature
+Voice message
+Email automatically marks as spam
+AI
+assembly line defects in computers
+Healthcare: diagnosing health issues
+
+What is machine learning
+The science of getting computers to learn without being explicitly programmed
+
+Why is it so widely used?
+subfield of AI
+not explicitly code, but machine learns things like web searching
+AGI: AI being as intelligent as us. Long way to go. Best way to achieve it is by learning algorithm
+Vast demand for this skill
+
+>Would have made it worse
+
+Machine learning algorithms
+-supervised learning: rapid advancements, used most in real world applicaitons
+- unsupervised learning
+-Recommender systems
+-Reinforcement learning
+
+Supervised learning: Learns from input to output label
+Learns from being given "right answers"
+eventually learns from just the input and gives predictions
+Application
+spam filtering, speech recognition,  machine translation, online advertising, self driving car, visual inspection
+How to get an algorithm to systematically choose a line in the graph
+Predict a number from infinitely possible outputs is called "regression"
+
+learning inputs to outputs is supervised learning
+
+Classification:only a small number of possible outputs. Can be showed using a line.
+Brest Cancer detection: Either benign or malignant. Malignant type 1 or malignant type 2.
+so, we predict categories. Whether it is a cat or a dog. Whether it is 0 or 1 or 2.
+Classification predicts categories gives small, finite number of possible outputs.
+
+Two or more input in classification?
+possible.
+
+Boundary line is used in graph.
+
+Lecture 6:
+Unsupervised learning: Find something interesting in unlabeled data.
+We are not trying to give right answers. We ask the machine "what's interesting?' or "what pattern or structures there might be in this data?"
+Clustering data.
+Clustering data is used in google news for recommending articles. (Example- algorithm clusters Keywords like panda, zoo, twins)
+
+Clustering DNA microarray
+I did'mt finish my salad because it is genetic!
+
+DNA microarray clusters categories of genes.
+It only clusters different data, differentiates them. It does not say Adnan hates veggies.
+
+
+Clustering: Group similar data points together.
+Anomaly detection: Find unusual data points.
+Dimensionality reduction: Compress data using fewer numbers.
+  
+
+
+
+Lecture 9:
+Linear Regression model: predicts numbers
+Supervised learning model: Data has "right answers"
+Classification model: Predicts categories (cats, dogs), small number of possible outputs (cats and dogs make only 2, or medical outcome, lets say 10 outcomes. It is finite) (Whereas regression has infinitely many possible outputs)
+
+Terminology:
+
+Data used to train the model is called Training set. (These data are the input)
+input variable feature=x
+output variable/target variable=y
+number of traing example=m
+single training example=(x,y)
+
+(x^(i),y^(i))=ith training example
+
+training set(both input features and output targets) ->feed to Learning algorithm(produces function) ->prediction is y-hat. (y has a hat looking symbol). f is the model, y hat is the prediction (estimated value y), x is the feature.
+
+fw,b(X)=wx+b or f(X)=wx+b this makes a prediction for value of y, using a straight line function of x
+
+
+Univariate=one variable
+Univariate linear regression has ONE variable 
+
+
+Lecture 11:
+
+Model: f(x)=wx+b
+w,b: parameters
+cost function: J(w,b)=(1/2*m)sum m(hat)(i)-y(i)=error (from i=1)
+(error)^2
+Error= Actual Output-Predicted output
+
+
+model: f(x)=wx+b
+parameters: w,b
+cost function: J(w,b)=(1/2m) sum m-> i=1 (f(x)i-(y)i)^2
+
+goal: minimize J(w,b)
+f(x)=wx+b
+Simplified:
+f(x)=wx
+minimize J(w)
+
+for f(x), J(w)
+
+Graphical interpretation shown
+
+Lecture 13:
+More graphs that are soup bowl shaped
+
+Lecture 14:
+Visualization of plotted graphs
+
+L-15: Gradient Descent
+Used in ML and DeepLearning
+used for linear regression or any function.
+
+Have some function you want to minimize J(w,b)
+To minimize a function
+Outline: Start with some w,b (initial value does not matter, standard practice is 0)
+w=0
+b=0
+keep changing w,b to reduce J(w,b) until we settle at or near a minimum
+
+May have more than one minimum
+
+concept of local minima
+L-16:
+= is assignment operator
+α is learning rate
+cost function J derivative
+
+for gradient descent you have to simultaneously update w and b.
+if α is too small gradient descent may be slow
+if α is too large gradient descent may be never reach minimum, overshoot. Fail to converge, diverge
+If miltiple minima, local minima has slope=0
+then, w=w-α.0
+w=w
+then,parameters being tyou to local minima then further gradient descent does absolutely nothing! Thats what we want
+Can reach local minimum with fixed learning rate?
+Near a local minimum
+-Derivative becomes smaller
+-Update steps become smaller
+Can reach minimum without decreasing learning rate α.
+
+
+
